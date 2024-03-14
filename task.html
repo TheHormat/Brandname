@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer__circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner__circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid red;
+            animation: rotateAround 4s linear infinite;
+        }
+
+        @keyframes rotateAround {
+            from {
+                transform: rotate(0deg) translateX(100px) rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg) translateX(100px) rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer__circle">
+        <div class="inner__circle"></div>
+    </div>
+
+</body>
+
+</html>

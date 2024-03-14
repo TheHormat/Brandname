@@ -1,0 +1,18 @@
+@media screen and (max-width: 425px) {
+    .partners ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last__desc {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+}
